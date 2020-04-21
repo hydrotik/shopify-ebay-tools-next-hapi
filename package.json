@@ -1,13 +1,15 @@
 {
   "name": "shopify-ebay-tools-next-hapi",
   "version": "0.1.0",
-  "private": true,
+  "author": "Donovan Adams,Vladimir Zinchenko",
+  "license": "MIT",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node ./src/server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "@hapi/hapi": "^19.1.1",
     "bluebird": "^3.7.2",
     "cheerio": "^1.0.0-rc.3",
     "deep-object-diff": "^1.1.0",
@@ -24,10 +26,12 @@
     "shopify-api-node": "^3.3.1"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.2",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.4.4",
     "jest": "^25.4.0",
     "nyc": "^15.0.1",
+    "postcss-preset-env": "^6.7.0",
     "sinon": "^9.0.2",
     "tailwindcss": "^1.3.1"
   }
