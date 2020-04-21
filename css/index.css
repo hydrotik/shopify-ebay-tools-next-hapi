@@ -1,0 +1,24 @@
+/*
+ |--------------------------------------------------------------------------
+ | CSS entry point
+ |--------------------------------------------------------------------------
+ |
+ | This boilerplate provide a default CSS configuration which
+ | includes Tailwind CSS and base styling. You can extend it however
+ | you want thanks to the PostCSS import plugin.
+ |
+ */
+
+/* Tailwind's base styling */
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+/* purgecss end ignore */
+@import 'tailwindcss/utilities';
+
+/* Custom */
+
+
+tspan {
+	font-size: 9px !important;
+}
